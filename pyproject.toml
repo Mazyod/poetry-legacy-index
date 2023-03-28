@@ -11,7 +11,7 @@ python = "^3.10"
 poetry = "^1.4.1"
 
 [tool.poetry.plugins."poetry.application.plugin"]
-legacy-index-fix = "main:ExportApplicatioLegacyIndexFixPlugin"
+legacy-index-fix = "poetry_legacy_index.main:ExportApplicatioLegacyIndexFixPlugin"
 
 
 [tool.poetry.group.dev.dependencies]
