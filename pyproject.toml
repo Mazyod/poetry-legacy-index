@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "poetry-legacy-index"
+version = "0.1.0"
+description = ""
+authors = ["Maz Jaleel <mazjaleel@gmail.com>"]
+readme = "README.md"
+packages = [{include = "poetry_legacy_index"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+poetry = "^1.4.1"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+legacy-index-fix = "main:ExportApplicatioLegacyIndexFixPlugin"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
