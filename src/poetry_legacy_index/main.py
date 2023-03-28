@@ -55,18 +55,6 @@ class ExportApplicatioLegacyIndexFixPlugin(ApplicationPlugin):
     def commands(self) -> list[type[Command]]:
         return [LegacyIndexFixCommand]
 
-    def activate(self, application: Application) -> None:
-        # Running the command automatically without explicitly being called.
-        # This is because the author always needs this fix to be applied.
-
-        # If you're checking this code out to get inspiration
-        # for your own plugins: DON'T DO THIS!
-        command = LegacyIndexFixCommand()
-        command.set_application(application)
-        command.execute(io=application._io)
-
-        super().activate(application=application)
-
 
 # filter wheels func to be appended at the end of the file
 def filter_wheels(wheels):
