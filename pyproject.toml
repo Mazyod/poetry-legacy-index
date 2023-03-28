@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Maz Jaleel <mazjaleel@gmail.com>"]
 readme = "README.md"
-packages = [{include = "poetry_legacy_index"}]
+packages = [{include = "poetry_legacy_index", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
