@@ -4,6 +4,20 @@ This project is a poetry plugin that has one simple purpose:
 
 **Patch poetry (Legacy) Repository to download wheels associated with the given platform.**
 
+## Usage
+
+Add the plugin to Poetry:
+
+```sh
+poetry self add poetry-legacy-index
+```
+
+Run the command to patch Poetry:
+
+```sh
+poetry legacy-index-fix
+```
+
 ## Why?
 
 Long story short, TensorFlow 2.11.x includes different metadata per platform wheel, and poetry simply downloads the first wheel found in a legacy index (e.g. devpi, pypiserver), which causes it to incorrectly resolve the dependencies.
