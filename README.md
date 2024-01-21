@@ -18,6 +18,8 @@ Run the command to patch Poetry:
 poetry legacy-index-fix
 ```
 
+> :warning: Please make sure to clear poetry caches in case poetry already cached the broken dependency chain.
+
 ## Why?
 
 Long story short, TensorFlow 2.11.x includes different metadata per platform wheel, and poetry simply downloads the first wheel found in a legacy index (e.g. devpi, pypiserver), which causes it to incorrectly resolve the dependencies.
