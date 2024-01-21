@@ -18,7 +18,8 @@ Run the command to patch Poetry:
 poetry legacy-index-fix
 ```
 
-> :warning: Please make sure to clear poetry caches in case poetry already cached the broken dependency chain.
+> [!WARNING]
+> Please make sure to clear poetry caches in case poetry already cached the broken dependency chain.
 
 ## Why?
 
