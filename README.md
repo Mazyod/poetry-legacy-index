@@ -1,5 +1,7 @@
 # Poetry Legacy Index Fix
 
+⚠ **This plugin breaks Poetry 1.8.x in subtle ways, and is therefor incompatible for now.**
+
 This project is a poetry plugin that has one simple purpose:
 
 **Patch poetry (Legacy) Repository to download wheels associated with the given platform.**
